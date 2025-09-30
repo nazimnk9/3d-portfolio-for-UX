@@ -69,7 +69,7 @@ export default function Navigation() {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-background/80 backdrop-blur-lg border-b border-border shadow-sm" : "bg-transparent",
+        isScrolled ? "bg-background/80 backdrop-blur-lg border-b border-border shadow-sm" : "bg-background/80 backdrop-blur-lg border-b border-border shadow-sm",
       )}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -114,7 +114,7 @@ export default function Navigation() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
+          <div className="md:hidden py-4 border-t border-border bg-background/80 backdrop-blur-lg border-b border-border shadow-sm">
             <div className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <Button
